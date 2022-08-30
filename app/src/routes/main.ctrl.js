@@ -1,11 +1,11 @@
 "use strict";
 
 const main = (req, res) => {
-    res.render("pages/index");
+    res.render("index");
 }
 
 const login = (req, res) => {
-    res.render("pages/login");
+    res.render("login");
 }
 
 module.exports = {
