@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/login.css">
-    <script src="/pages/login.js" defer></script>
+    <script src="/pages/register.js" defer></script>
     <title>Document</title>
 </head>
 <body class="align">
@@ -18,14 +18,14 @@
             <label for="register_name"><svg class="icon">
                 <use xlink:href="#icon-user"></use>
               </svg></label>
-            <input id="name" autocomplete="username" id="login__username" type="text" name="username" class="form__input" placeholder="이름" required>
+            <input id="name" autocomplete="username" type="text" name="username" class="form__input" placeholder="이름" required>
         </div>
 
         <div class="form__field">
           <label for="register_ID"><svg class="icon">
               <use xlink:href="#icon-user"></use>
             </svg></label>
-          <input id="id" autocomplete="username" id="login__username" type="text" name="username" class="form__input" placeholder="아이디" required>
+          <input id="id" autocomplete="username" type="text" name="username" class="form__input" placeholder="아이디" required>
         </div>
   
         <div class="form__field">
@@ -49,7 +49,7 @@
         </div>
   
         <div class="form__field">
-          <input type="submit" value="로그인">
+          <input id="registBtn" type="submit" value="회원가입">
         </div>
   
       </form>
