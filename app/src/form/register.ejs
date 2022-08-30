@@ -15,17 +15,37 @@
       <form action="https://httpbin.org/post" method="POST" class="form login">
   
         <div class="form__field">
-          <label for="login__username"><svg class="icon">
+            <label for="register_name"><svg class="icon">
+                <use xlink:href="#icon-user"></use>
+              </svg></label>
+            <input id="name" autocomplete="username" id="login__username" type="text" name="username" class="form__input" placeholder="이름" required>
+        </div>
+
+        <div class="form__field">
+          <label for="register_ID"><svg class="icon">
               <use xlink:href="#icon-user"></use>
-            </svg><span class="hidden">Username</span></label>
+            </svg></label>
           <input id="id" autocomplete="username" id="login__username" type="text" name="username" class="form__input" placeholder="아이디" required>
         </div>
   
         <div class="form__field">
-          <label for="login__password"><svg class="icon">
+          <label for="register_password"><svg class="icon">
               <use xlink:href="#icon-lock"></use>
-            </svg><span class="hidden">Password</span></label>
+            </svg></label>
           <input id="password" type="password" name="password" class="form__input" placeholder="비밀번호" required>
+        </div>
+
+        <div class="form__field">
+            <label for="register_passwordc"><svg class="icon">
+                <use xlink:href="#icon-lock"></use>
+              </svg></label>
+            <input id="passwordc" type="password" name="password" class="form__input" placeholder="비밀번호 확인" required>
+        </div>
+
+        <div class="form__field">
+            <label for="register_email"><svg class="icon">
+              </svg></label>
+            <input id="email" type="text" name="email" class="form__input" placeholder="이메일" required>
         </div>
   
         <div class="form__field">
@@ -34,7 +54,7 @@
   
       </form>
   
-      <p class="text--center">아직 회원이 아니신가요? <a href="/register">회원가입</a> <svg class="icon">
+      <p class="text--center">이미 회원이 신가요? <a href="/login">로그인</a> <svg class="icon">
           <use xlink:href="#icon-arrow-right"></use>
         </svg></p>
   
