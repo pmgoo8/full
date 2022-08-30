@@ -10,11 +10,19 @@ const name = document.querySelector("#name"),
 registBtn.addEventListener("click", register);
 
 function register() {
+    if (!name.value) return alert("이름을 입력해 주십시오.");
+    if (!id.value) return alert("아이디를 입력해 주십시오.");
+    if (!password.value) return alert("비밀번호를 입력해 주십시오.");
+    if (password.value !== passwordc.value){
+        passwordc.value = "";
+        return alert("비밀번호가 일치하지 않습니다.");
+    }
+    if (!email.value) return alert("이메일을 입력해 주십시오.");
+
     const req = {
         name: name.value,
         id: id.value,
         password: password.value,
-        passwordc: passwordc.value,
         email: email.value,
     };
 
