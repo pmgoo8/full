@@ -5,9 +5,9 @@ const name = document.querySelector("#name"),
     password = document.querySelector("#password"),
     passwordc = document.querySelector("#passwordc"),
     email = document.querySelector("#email"),
-    registBtn = document.querySelector("#registBtn");
+    registerBtn = document.querySelector("#button");
 
-registBtn.addEventListener("click", register);
+registerBtn.addEventListener("click", register);
 
 function register() {
     if (!name.value) return alert("이름을 입력해 주십시오.");
@@ -29,7 +29,7 @@ function register() {
     fetch("/register", {
         method: "POST",
         headers: {
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
         },
         body: JSON.stringify(req),
     }).then((res) => res.json())

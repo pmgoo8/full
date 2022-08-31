@@ -1,5 +1,22 @@
 {
-    "id": ["jeyeon43", "sonjaeyeon43"],
-    "password": ["1234", "4567"],
-    "name": ["제연", "손제연"]
+    "name": [
+		"제연",
+		"손제연",
+		"손제연"
+	],
+	"id": [
+		"jeyeon43",
+		"sonjaeyeon43",
+		"admin"
+	],
+	"password": [
+		"1234",
+		"4567",
+		"1234"
+	],
+	"email": [
+		"s@naver.com",
+		"a@naver.com",
+		"sonjaeyeon43naver.com"
+	]
 }
